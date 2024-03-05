@@ -6,11 +6,8 @@ import { useEffect } from "react"
 
 export default function Home() {
   return (
-    <main className="fade">
-      <header
-        id="fadeInBox"
-        className="fade_init w-full sticky top-0 z-50 bg-white border-b"
-      >
+    <main>
+      <header className="w-full sticky top-0 z-50 bg-white border-b">
         <div className="max-w-5xl mx-auto text-center  justify-between py-7 flex">
           <div className="flex">
             <div className="text-4xl font-bold">AGEHA</div>
@@ -54,7 +51,6 @@ export default function Home() {
           </ul>
         </div>
       </header>
-
       <div className="max-w-5xl  mx-auto mb-24">
         <div className="relative w-full imgcss">
           <img
@@ -71,8 +67,9 @@ export default function Home() {
         </div>
       </div>
 
+      {/* お仕事内容 */}
       <div className="bg-pink-50">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-5xl mx-auto mb-8">
           <div className="text-center">
             <div
               id="section-task"
@@ -135,8 +132,8 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="border"></div>
       </div>
-
       {/* メリット */}
       <div className="bg-blue-50">
         <div className="text-center">
@@ -197,7 +194,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="flex justify-between">
+          <div className="flex justify-between mb-8">
             <div>
               <div className="text-black text-xl font-bold mt-16">
                 顔出しなし・ノンアダでもOK
@@ -227,7 +224,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
             <div className="w-2/5 shadow-xl mt-16">
               <img
                 src="https://media.istockphoto.com/id/680368662/ja/%E3%82%B9%E3%83%88%E3%83%83%E3%82%AF%E3%83%95%E3%82%A9%E3%83%88/%E5%A5%B3%E6%80%A7%E3%81%AE%E8%A1%97.jpg?s=612x612&w=0&k=20&c=7HerT3uT8XWZyUElJmmD6oTpPzGZH7PdjxPut9L3oTo="
@@ -236,8 +232,8 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="border"></div>
       </div>
-
       <div className="bg-green-50">
         <div className="text-center pt-20">
           <div className="text-black text-4xl font-bold pt-2 px-4 border-b-red-200">
@@ -246,7 +242,7 @@ export default function Home() {
         </div>
         {/* Q＆A */}
         <div className="max-w-5xl mx-auto pt-10">
-          <div className="border p-10 bg-white rounded-xl shadow-2xl">
+          <div className="border p-10 bg-white rounded-xl shadow-xl">
             <div className="text-xl border-b">
               <span className="text-pink-400 text-2xl mr-5">Q</span>
               登録するのにお金かかるの？
@@ -259,9 +255,7 @@ export default function Home() {
               登録や退会に金銭は一切かかりませんので、始めてみたいなと思っている方はぜひお気軽に登録してお試しいただければと思います♪
             </div>
           </div>
-        </div>
-        <div className="max-w-5xl mx-auto pt-10">
-          <div className="border p-10 bg-white rounded-xl shadow-2xl">
+          <div className="mt-16 border p-10 bg-white rounded-xl shadow-xl">
             <div className="text-xl border-b">
               <span className="text-pink-400 text-2xl mr-5">Q</span>
               初めてなので不安です・・・
@@ -276,9 +270,7 @@ export default function Home() {
               お仕事を始めた後ももちろんスタッフが丁寧にサポートさせて頂きます。お問い合わせに対応させて頂くのはもちろん、時には貴女のチャット画面にスタッフが出向いて直接やりとりをしながらアドバイスやサポートをさせて頂きます。
             </div>
           </div>
-        </div>
-        <div className="max-w-5xl mx-auto pt-10">
-          <div className="border p-10 bg-white rounded-xl shadow-2xl">
+          <div className="mt-16 border p-10 bg-white rounded-xl shadow-2xl mb-8">
             <div className="text-xl border-b">
               <span className="text-pink-400 text-2xl mr-5">Q</span>
               チャットレディ未経験でも稼げますか？
@@ -290,9 +282,10 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="border"></div>
       </div>
-
-      <div className="">
+      {/* おすすめの人 */}
+      <div className="bg-50">
         <div className="text-center pt-20">
           <div className="text-black text-4xl font-bold pt-2 px-4 border-b-red-200">
             どんな人におすすめ？
@@ -356,7 +349,7 @@ export default function Home() {
               />
             </div>
             <div className="hukidasi w-4/5 bg-pink-50 shadow-xl">
-              <div className="px-10 pt-5 pb-3">
+              <div className="px-10 pt-5 pb-3 bg-pink-50">
                 <h2 className="text-2xl font-bold underline decoration-slate-400">
                   主婦の方
                 </h2>
@@ -370,10 +363,33 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="border"></div>
       </div>
 
-      <footer className="text-center text-xs font-sans bg-blue-900 text-white">
-        © AGEHAライブチャット All rights reserved.
+      {/* ご応募はこちら */}
+      <div className="bg-pink-50">
+        <div className="text-center pt-20">
+          <div className="text-black text-4xl font-bold pt-2 px-4 border-b-red-200">
+            ご応募はこちら！
+          </div>
+          <div className="mt-16 pb-8 bg-pink-50">
+            <button className="border w-60 h-14 text-2xl bg-blue-300 text-white rounded-full hover:bg-blue-500">
+              登録
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <footer className="text-center text-xs font-sans max-w-5xl mx-auto">
+        <div className="text-center justify-center mt-16">
+          <div>サービス概要及び料金表</div>
+          <div className="flex justify-center mt-4">
+            <div className="mr-8">利用規約</div>
+            <div className="mr-8">特定商取引に基づく表示</div>
+            <div className="mr-8">プライバシーポリシー</div>
+          </div>
+          <div className="my-4">© AGEHAライブチャット All rights reserved.</div>
+        </div>
       </footer>
     </main>
   )
