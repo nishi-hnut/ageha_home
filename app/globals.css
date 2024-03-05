@@ -2,8 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-.img {
-  position: relative;
-  width: 100%;
+html {
+  scroll-behavior: smooth;
+}
+
+.imgcss {
   height: 600px;
+}
+
+li {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+li::after {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: pink;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform 0.3s;
+}
+
+li:hover::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+.section {
+  scroll-margin-top: 150px;
 }
