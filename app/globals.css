@@ -6,6 +6,14 @@ html {
   scroll-behavior: smooth;
 }
 
+.section-task {
+  scroll-margin-top: 200;
+}
+
+.value {
+  scroll-margin-top: 80;
+}
+
 .imgcss {
   height: 600px;
 }
@@ -32,10 +40,6 @@ li::after {
 li:hover::after {
   transform-origin: left top;
   transform: scale(1, 1);
-}
-
-.section {
-  scroll-margin-top: 150px;
 }
 
 .circle-css {

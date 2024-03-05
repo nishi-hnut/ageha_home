@@ -3,12 +3,13 @@
 import Image from "next/image"
 import Link from "next/link"
 import { useEffect } from "react"
+import { Link as Scroll } from "react-scroll"
 
-export default function Home() {
+export default function Home(): JSX.Element {
   return (
-    <main>
+    <main className="container">
       <header className="w-full sticky top-0 z-50 bg-white border-b">
-        <div className="max-w-5xl mx-auto text-center  justify-between py-7 flex">
+        <div className="max-w-5xl mx-auto text-center  justify-between py-7 flex container">
           <div className="flex">
             <div className="text-4xl font-bold">AGEHA</div>
             <div className="text-start">
@@ -31,7 +32,16 @@ export default function Home() {
         </div>
         <div className="max-w-5xl mx-auto text-center justify-start mb-1">
           <ul className="flex">
-            <Link href="#section-task">
+            <Scroll
+              to="section-task"
+              smooth={true}
+              duration={600}
+              offset={-30}
+              className="mr-16 font-bold text-pink-400 cursor-pointer li-css"
+            >
+              お仕事
+            </Scroll>
+            <Link href="#section-task" className="section">
               <li className="mr-16 font-bold text-pink-400 cursor-pointer">
                 お仕事
               </li>
@@ -73,7 +83,7 @@ export default function Home() {
           <div className="text-center">
             <div
               id="section-task"
-              className="text-black text-4xl font-bold pt-20 px-4 border-b-red-200 section"
+              className="text-black text-4xl font-bold pt-20 px-4 border-b-red-200 section-task1"
             >
               チャットレディーのお仕事内容
             </div>
@@ -107,7 +117,7 @@ export default function Home() {
             <div>
               <div
                 id="section-value"
-                className="text-black text-xl font-bold section"
+                className="text-black text-xl font-bold value"
               >
                 報酬について
               </div>
