@@ -76,7 +76,7 @@ export default function Home() {
           <div className="text-center">
             <div
               id="section-task"
-              className="text-black text-4xl font-bold pt-2 px-4 border-b-red-200 section"
+              className="text-black text-4xl font-bold pt-20 px-4 border-b-red-200 section"
             >
               チャットレディーのお仕事内容
             </div>
@@ -140,7 +140,7 @@ export default function Home() {
       {/* メリット */}
       <div className="bg-blue-50">
         <div className="text-center">
-          <div className="text-black text-4xl font-bold pt-2 px-4 border-b-red-200">
+          <div className="text-black text-4xl font-bold pt-20 px-4 border-b-red-200">
             チャットレディーのメリット
           </div>
         </div>
@@ -239,13 +239,13 @@ export default function Home() {
       </div>
 
       <div className="bg-green-50">
-        <div className="text-center pt-5">
+        <div className="text-center pt-20">
           <div className="text-black text-4xl font-bold pt-2 px-4 border-b-red-200">
             Q&A
           </div>
         </div>
         {/* Q＆A */}
-        <div className="max-w-5xl m-auto pt-10">
+        <div className="max-w-5xl mx-auto pt-10">
           <div className="border p-10 bg-white rounded-xl shadow-2xl">
             <div className="text-xl border-b">
               <span className="text-pink-400 text-2xl mr-5">Q</span>
@@ -260,7 +260,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="max-w-5xl m-auto pt-10">
+        <div className="max-w-5xl mx-auto pt-10">
           <div className="border p-10 bg-white rounded-xl shadow-2xl">
             <div className="text-xl border-b">
               <span className="text-pink-400 text-2xl mr-5">Q</span>
@@ -277,7 +277,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="max-w-5xl m-auto pt-10">
+        <div className="max-w-5xl mx-auto pt-10">
           <div className="border p-10 bg-white rounded-xl shadow-2xl">
             <div className="text-xl border-b">
               <span className="text-pink-400 text-2xl mr-5">Q</span>
@@ -291,6 +291,87 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <div className="">
+        <div className="text-center pt-20">
+          <div className="text-black text-4xl font-bold pt-2 px-4 border-b-red-200">
+            どんな人におすすめ？
+          </div>
+          <div className="mt-16">
+            フリーターはもちろん以下の方もおすすめしています！
+          </div>
+        </div>
+
+        <div className="max-w-5xl mx-auto mt-10 mb-10">
+          <div className="flex">
+            <div className="w-1/5 mr-10">
+              <img
+                src="https://media.istockphoto.com/id/680368662/ja/%E3%82%B9%E3%83%88%E3%83%83%E3%82%AF%E3%83%95%E3%82%A9%E3%83%88/%E5%A5%B3%E6%80%A7%E3%81%AE%E8%A1%97.jpg?s=612x612&w=0&k=20&c=7HerT3uT8XWZyUElJmmD6oTpPzGZH7PdjxPut9L3oTo="
+                alt=""
+                className="circle-css object-cover"
+              />
+            </div>
+            <div className="hukidasi w-4/5 bg-pink-50 shadow-xl">
+              <div className="px-10 pt-5 pb-3">
+                <h2 className="text-2xl font-bold  underline decoration-slate-400">
+                  大学生・専門学校生の方
+                </h2>
+                <p className="mt-5">
+                  「学校の授業やサークル、就活で忙しくって時間もお金も余裕がないなぁ・・・」
+                  そんな大学生・専門学校生さんにおすすめなのがチャットレディーのお仕事なんです。
+                  チャットレディーはこの日のこの時間に稼働するといった決まり事はないため、いつでも自分の好きなタイミングでお仕事をして高収入を得ることができます。
+                  日払いにも対応しているので、急に飲食業のバイトがなくなって困っているといった方にもおすすめです。
+                  個室で仕事をするため面倒な人間関係もなく、バイト先の人間関係に疲れてしまった・・・という方にもぴったりですよ。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="flex mt-16">
+            <div className="w-1/5 mr-10">
+              <img
+                src="https://media.istockphoto.com/id/680368662/ja/%E3%82%B9%E3%83%88%E3%83%83%E3%82%AF%E3%83%95%E3%82%A9%E3%83%88/%E5%A5%B3%E6%80%A7%E3%81%AE%E8%A1%97.jpg?s=612x612&w=0&k=20&c=7HerT3uT8XWZyUElJmmD6oTpPzGZH7PdjxPut9L3oTo="
+                alt=""
+                className="circle-css object-cover"
+              />
+            </div>
+            <div className="hukidasi w-4/5 bg-pink-50 shadow-xl">
+              <div className="px-10 pt-5 pb-3">
+                <h2 className="text-2xl font-bold underline decoration-slate-400">
+                  OLの方
+                </h2>
+                <p className="mt-5">
+                  お休みの日や仕事帰りで疲れてないときに働きたいなど、本業の都合にあわせて好きなタイミングで働くことができます。
+                  「本業だけでは生活費が足りない」「副業として稼ぎたい」そんなOLさんにぴったりなのがチャットレディーです！
+                  本業の会社にバレないように副業していただくことが可能です。申告の際に気をつけることなど、スタッフが相談させていただきます！
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="flex mt-16">
+            <div className="w-1/5 mr-10">
+              <img
+                src="https://media.istockphoto.com/id/680368662/ja/%E3%82%B9%E3%83%88%E3%83%83%E3%82%AF%E3%83%95%E3%82%A9%E3%83%88/%E5%A5%B3%E6%80%A7%E3%81%AE%E8%A1%97.jpg?s=612x612&w=0&k=20&c=7HerT3uT8XWZyUElJmmD6oTpPzGZH7PdjxPut9L3oTo="
+                alt=""
+                className="circle-css object-cover"
+              />
+            </div>
+            <div className="hukidasi w-4/5 bg-pink-50 shadow-xl">
+              <div className="px-10 pt-5 pb-3">
+                <h2 className="text-2xl font-bold underline decoration-slate-400">
+                  主婦の方
+                </h2>
+                <p className="mt-5">
+                  昼間空いている時間に働いて自分のお小遣いを稼ぎたい、そんな主婦の方におすすめなのがチャットレディーです。
+                  家事や子育てに忙しい主婦の方でも、隙間時間に稼いでいただけます！
+                  外に出て接客業をするのはウイルスが心配・・・そんな主婦の方でも、チャットレディーは在宅で稼いでいただけるので安心です。
+                  家族バレしたくない方通勤で稼ぎたいという方も、チャットブースは清潔な個室なので安全ですよ。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <footer className="text-center text-xs font-sans bg-blue-900 text-white">
         © AGEHAライブチャット All rights reserved.
       </footer>

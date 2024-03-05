@@ -37,3 +37,33 @@ li:hover::after {
 .section {
   scroll-margin-top: 150px;
 }
+
+.circle-css {
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+}
+
+.hukidasi {
+  position: relative;
+  display: inline-block;
+  padding: 7px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  font-size: 16px;
+  border-radius: 16px;
+}
+
+.hukidasi:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  margin-top: -15px;
+  border: 15px solid transparent;
+  border-right: 15px solid #fdf2f8;
+}
